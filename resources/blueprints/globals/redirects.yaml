@@ -1,0 +1,78 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: entries
+            field:
+              fields:
+                -
+                  handle: old_url
+                  field:
+                    input_type: text
+                    placeholder: /old-url
+                    antlers: false
+                    type: text
+                    display: 'Old URL'
+                    icon: text
+                    width: 25
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                    validate:
+                      - required
+                -
+                  handle: new_url
+                  field:
+                    type: link
+                    display: 'New URL'
+                    icon: link
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                    validate:
+                      - required
+                -
+                  handle: response
+                  field:
+                    options:
+                      301: 'Permanent (301)'
+                      302: 'Temporary (302)'
+                    taggable: false
+                    push_tags: false
+                    multiple: false
+                    clearable: false
+                    searchable: true
+                    cast_booleans: false
+                    type: select
+                    display: Response
+                    icon: select
+                    instructions: 'The HTTP response code'
+                    width: 25
+                    listable: hidden
+                    instructions_position: above
+                    visibility: visible
+                    replicator_preview: true
+                    hide_display: false
+                    validate:
+                      - required
+                      - 'in:301,302'
+              mode: table
+              reorderable: true
+              fullscreen: true
+              type: grid
+              display: Entries
+              icon: grid
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              replicator_preview: true
+              hide_display: false
+              add_row: 'Add redirect'

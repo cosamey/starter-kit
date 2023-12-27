@@ -1,0 +1,27 @@
+title: Builder
+fields:
+  -
+    handle: builder
+    field:
+      collapse: false
+      previews: true
+      fullscreen: true
+      sets:
+        new_set_group:
+          display: 'New Set Group'
+          instructions: null
+          icon: null
+          sets:
+            new_set:
+              display: 'New Set'
+              instructions: null
+              icon: null
+              fields: {  }
+      type: replicator
+      display: 'Page Builder'
+      icon: replicator
+      listable: false
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false

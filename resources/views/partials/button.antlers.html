@@ -1,0 +1,8 @@
+<{{ href ? 'a' : 'button' }}
+    {{ href ? 'href="{href}"' : '' }}
+    {{ target ? 'target="{target}"' : '' }}
+    {{ type ? 'type="{type}"' : '' }}
+    class="inline-flex items-center gap-2"
+>
+    {{ slot }}
+</{{ href ? 'a' : 'button' }}>

@@ -1,0 +1,59 @@
+title: Utilities/Meta
+fields:
+  -
+    handle: meta_title
+    field:
+      input_type: text
+      character_limit: 70
+      antlers: false
+      type: text
+      display: Title
+      icon: text
+      instructions: "This entry's title, defaults to title and site name."
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: meta_description
+    field:
+      character_limit: '155'
+      antlers: false
+      type: textarea
+      display: Description
+      icon: textarea
+      instructions: "This entry's meta description."
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: meta_noindex
+    field:
+      default: false
+      type: toggle
+      display: Noindex
+      icon: toggle
+      instructions: 'Exclude this entry from indexing and the sitemap for crawlers.'
+      width: 50
+      listable: hidden
+      instructions_position: below
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+  -
+    handle: meta_nofollow
+    field:
+      default: false
+      type: toggle
+      display: Nofollow
+      icon: toggle
+      instructions: 'Instruct crawlers not to follow links on this entry.'
+      listable: hidden
+      instructions_position: below
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      width: 50

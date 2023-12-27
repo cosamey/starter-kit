@@ -1,0 +1,48 @@
+title: Utilities/Sitemap
+fields:
+  -
+    handle: sitemap_frequency
+    field:
+      options:
+        always: null
+        hourly: null
+        daily: null
+        weekly: null
+        monthly: null
+        yearly: null
+        never: null
+      taggable: false
+      push_tags: false
+      multiple: false
+      clearable: false
+      searchable: false
+      cast_booleans: false
+      type: select
+      display: Frequency
+      icon: select
+      instructions: 'How frequently the entry is likely to change.'
+      width: 50
+      listable: hidden
+      instructions_position: below
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      default: weekly
+  -
+    handle: sitemap_priority
+    field:
+      default: '0.5'
+      type: float
+      display: Priority
+      icon: float
+      instructions: 'The priority (0 to 1) of this URL relative to other URLs on this site.'
+      width: 50
+      listable: hidden
+      instructions_position: below
+      visibility: visible
+      replicator_preview: true
+      hide_display: false
+      validate:
+        - sometimes
+        - 'min:0.1'
+        - 'max:1.0'

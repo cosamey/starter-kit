@@ -1,0 +1,68 @@
+title: Page
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+      -
+        display: Content
+        fields:
+          -
+            import: builder
+  meta:
+    display: Meta
+    sections:
+      -
+        fields:
+          -
+            import: utilities.meta
+      -
+        display: 'Open Graph'
+        fields:
+          -
+            import: utilities.open_graph
+      -
+        display: Sitemap
+        instructions: 'More information at [sitemaps.org](https://sitemaps.org)'
+        fields:
+          -
+            import: utilities.sitemap
+      -
+        display: Schema
+        fields:
+          -
+            import: utilities.schema
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: parent
+            field:
+              type: entries
+              collections:
+                - pages
+              max_items: 1
+              listable: false
+              localizable: true
+          -
+            handle: template
+            field:
+              type: template
+              display: Template
+              localizable: true
