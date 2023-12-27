@@ -1,9 +1,9 @@
 {
-    "name": "my-vendor-name/starter-kit",
+    "name": "cosamey/starter-kit",
     "extra": {
         "statamic": {
             "name": "Starter Kit",
-            "description": "Starter Kit starter kit"
+            "description": ""
         }
     }
 }
