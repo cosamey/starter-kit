@@ -399,10 +399,11 @@ tabs:
               display: 'Default OG Image'
               icon: assets
               listable: hidden
-              instructions_position: above
+              instructions_position: below
               visibility: visible
               replicator_preview: true
               hide_display: false
+              instructions: 'The recommended size is 1200 x 630 px.'
       -
         display: Schema
         fields:
