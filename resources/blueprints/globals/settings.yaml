@@ -389,7 +389,7 @@ tabs:
             handle: og_image
             field:
               max_files: 1
-              mode: grid
+              mode: list
               container: assets
               restrict: false
               allow_uploads: true
